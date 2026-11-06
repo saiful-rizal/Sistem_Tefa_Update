@@ -81,6 +81,12 @@ export default function ModulePage(props) {
     <div className="module-page">
       <div className="module-intro">
         <div><h1>{title}</h1><p>{description}</p>{page === "Kasir POS" && <span className="demo-badge">Termasuk transaksi simulasi</span>}</div>
+        {roleId !== "kasir" && (
+          <div className="module-actions">
+            <button className="pill"><Icon name="refresh" size={14} /> Segarkan</button>
+            <button className="primary-btn" onClick={() => window.print()}><Icon name="download" size={14} /> Export</button>
+          </div>
+        )}
       </div>
       {page === "Perencanaan Modal" && <PerencanaanModule demandCaps={demandCaps} plan={plan} params={params} setParam={setParam} products={products} materials={materials} approved={approved} onApprove={onApprove} onRevoke={onRevoke} go={go} />}
       {page === "Rencana Produksi" && <RencanaProduksiModule stokJadi={stokJadi} approved={approved} products={products} materials={materials} realisasi={realisasi} onReport={onReport} go={go} canFinance={canFinance} />}

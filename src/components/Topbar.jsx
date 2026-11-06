@@ -15,9 +15,10 @@ export default function Topbar({
   user,
   onLogout,
 }) {
+  const pageLabel = page === "Kasir POS" && role.id === "kasir" ? "Kasir Tefa Bakery" : page;
   return (
     <header className="topbar">
-      <div className="crumbs"><span>TEFA Bakery</span><span className="sep">&rsaquo;</span><b>{page}</b></div>
+      <div className="crumbs"><span>TEFA Bakery</span><span className="sep">&rsaquo;</span><b>{pageLabel}</b></div>
       <div className="top-right">
         <button className="icon-btn" aria-label="Buka bantuan" onClick={() => setHelpOpen(true)}><Icon name="help" size={16} /></button>
         <div className="notification-wrap">

@@ -27,7 +27,7 @@ import BiayaKapasitasModule from "./BiayaKapasitasModule.jsx";
 import { can } from "../lib/roles.js";
 
 const TITLES = {
-  "Kasir POS": ["Kasir POS", "Pilih produk, pilih cara bayar, lalu tekan Bayar. Stok dan laporan langsung ikut berubah."],
+  "Kasir POS": ["Kasir Tefa Bakery", "Pilih produk, pilih cara bayar, lalu tekan Bayar. Stok dan laporan langsung ikut berubah."],
   "Riwayat Penjualan": ["Riwayat Penjualan", "Semua transaksi kasir: tunai, QRIS, dan transfer."],
   "Biaya & Kapasitas": ["Biaya & Kapasitas Produksi", "Atur kapasitas rutin 10–15 kg atau penuh 25 kg, dan lihat pembagian biaya 60/20/10/10."],
   "Proses Produksi": ["Proses Produksi", "Pantau tahapan dari penimbangan sampai packing dalam satu alur."],

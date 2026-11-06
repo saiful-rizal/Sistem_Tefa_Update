@@ -126,8 +126,8 @@ export default function Dashboard({
 
         <section className="card">
           <div className="module-card-title">
-            <div><h3>Stok Siap Jual</h3><p>Untuk menjual, buka Kasir POS agar pembayaran dan stok tercatat sekaligus.</p></div>
-            <button type="button" className="primary-btn" onClick={() => go("Kasir POS")}><Icon name="wallet" size={16} /> Buka Kasir POS</button>
+            <div><h3>Stok Siap Jual</h3><p>Untuk menjual, buka Kasir Tefa Bakery agar pembayaran dan stok tercatat sekaligus.</p></div>
+            <button type="button" className="primary-btn" onClick={() => go("Kasir POS")}><Icon name="wallet" size={16} /> Buka Kasir Tefa Bakery</button>
           </div>
           <div className="data-table-wrap"><table className="data-table" style={{ minWidth: 0 }}>
             <thead><tr><th>Produk</th><th>Siap jual</th><th>Status</th></tr></thead>
@@ -143,7 +143,7 @@ export default function Dashboard({
 
         <div className="card">
           <div className="module-card-title">
-            <div><h3>Transaksi Terbaru</h3><p>Pembayaran terakhir dari Kasir POS.</p></div>
+            <div><h3>Transaksi Terbaru</h3><p>Pembayaran terakhir dari Kasir Tefa Bakery.</p></div>
           </div>
           <div className="data-table-wrap"><table className="data-table" style={{ minWidth: 0 }}>
             <thead><tr><th>Tanggal</th><th>No. transaksi</th><th>Total</th><th>Metode</th><th>Kasir</th></tr></thead>

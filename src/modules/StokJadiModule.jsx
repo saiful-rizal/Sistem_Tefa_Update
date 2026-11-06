@@ -27,7 +27,7 @@ export default function StokJadiModule({ stokJadi, products, sales, waste, onSal
         <div className="page-head">
           <div>
             <h1>Penjualan Harian</h1>
-            <div className="sub">Lihat stok siap jual. Untuk menjual, gunakan Kasir POS agar pembayaran ikut tercatat.</div>
+            <div className="sub">Lihat stok siap jual. Untuk menjual, gunakan Kasir Tefa Bakery agar pembayaran ikut tercatat.</div>
           </div>
           <div className="head-actions">
             <span className="chip-status ok"><span className="dot"></span>{todaySold} pcs terjual hari ini</span>
@@ -44,7 +44,7 @@ export default function StokJadiModule({ stokJadi, products, sales, waste, onSal
                 <div className="pcard-num">{c.fresh}<small> pcs siap jual</small></div>
                 <div className="pcard-meta">Tahan {c.shelf} hari{c.soon > 0 ? ` • ${c.soon} pcs segera dijual` : ""}{c.expiredQty > 0 ? ` • ${c.expiredQty} pcs kedaluwarsa` : ""}</div>
                 <div className="pcard-meta">Rata-rata laku: <b>{c.avg.value != null ? Math.round(c.avg.value) : "-"} pcs/hari</b></div>
-                <button className="primary-btn" type="button" style={{ width: "100%", justifyContent: "center", marginTop: 12 }} onClick={() => go("Kasir POS")}><Icon name="wallet" size={14} /> Jual lewat Kasir POS</button>
+                <button className="primary-btn" type="button" style={{ width: "100%", justifyContent: "center", marginTop: 12 }} onClick={() => go("Kasir POS")}><Icon name="wallet" size={14} /> Jual lewat Kasir Tefa Bakery</button>
               </div>
             );
           })}

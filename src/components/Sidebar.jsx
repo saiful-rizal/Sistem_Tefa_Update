@@ -53,7 +53,7 @@ const MENU = [
 // Halaman pendek untuk Kasir (front office) — tidak menampilkan grup penuh.
 const KASIR_MENU = [
   { id: "Dashboard", icon: "grid" },
-  { id: "Kasir POS", icon: "wallet" },
+  { id: "Kasir POS", label: "Kasir Tefa Bakery", icon: "wallet" },
   { id: "Riwayat Penjualan", icon: "history" },
   { id: "Stok Barang Jadi", icon: "bread" },
   { id: "Pesanan", icon: "receipt" },

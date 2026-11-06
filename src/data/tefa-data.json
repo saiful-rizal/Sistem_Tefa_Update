@@ -1,0 +1,533 @@
+{
+  "products": [
+    {
+      "id": "PRD01",
+      "name": "Roti Manis",
+      "price": 5000,
+      "hpp": 3000,
+      "margin": 2000,
+      "oven": 2,
+      "mixer": 1,
+      "sdm": 1,
+      "dmax": 250,
+      "shelfDays": 3,
+      "beratAdonan": 50,
+      "bom": {
+        "RM001": 0.026,
+        "RM002": 0.01,
+        "RM003": 0.0003,
+        "RM004": 0.0003,
+        "RM005": 0.003,
+        "RM006": 0.004,
+        "RM007": 0.003,
+        "RM008": 0.0003,
+        "RM013": 0.0005,
+        "RM009": 0.0015,
+        "RM010": 0.0005,
+        "RM012": 0.0015
+      }
+    },
+    {
+      "id": "PRD02",
+      "name": "Roti Tawar",
+      "price": 12000,
+      "hpp": 7000,
+      "margin": 5000,
+      "oven": 5,
+      "mixer": 2,
+      "sdm": 3,
+      "dmax": 100,
+      "shelfDays": 4,
+      "beratAdonan": 250,
+      "bom": {
+        "RM001": 0.13,
+        "RM002": 0.05,
+        "RM003": 0.0015,
+        "RM004": 0.0015,
+        "RM005": 0.015,
+        "RM006": 0.02,
+        "RM007": 0.015,
+        "RM008": 0.0015,
+        "RM013": 0.0025,
+        "RM012": 0.01
+      }
+    },
+    {
+      "id": "PRD03",
+      "name": "Roti Kering 100g",
+      "price": 10000,
+      "hpp": 6000,
+      "margin": 4000,
+      "oven": 3,
+      "mixer": 1.5,
+      "sdm": 2,
+      "dmax": 100,
+      "shelfDays": 14,
+      "beratAdonan": 100,
+      "bom": {
+        "RM001": 0.052,
+        "RM002": 0.02,
+        "RM003": 0.0006,
+        "RM004": 0.0006,
+        "RM005": 0.006,
+        "RM006": 0.008,
+        "RM007": 0.006,
+        "RM008": 0.0006,
+        "RM013": 0.001,
+        "RM009": 0.002,
+        "RM011": 0.004,
+        "RM012": 0.002
+      }
+    },
+    {
+      "id": "PRD04",
+      "name": "Roti Kering 180g",
+      "price": 15000,
+      "hpp": 9000,
+      "margin": 6000,
+      "oven": 4,
+      "mixer": 2,
+      "sdm": 2.5,
+      "dmax": 80,
+      "shelfDays": 14,
+      "beratAdonan": 180,
+      "bom": {
+        "RM001": 0.0936,
+        "RM002": 0.036,
+        "RM003": 0.00108,
+        "RM004": 0.00108,
+        "RM005": 0.0108,
+        "RM006": 0.0144,
+        "RM007": 0.0108,
+        "RM008": 0.00108,
+        "RM013": 0.0018,
+        "RM009": 0.0036,
+        "RM011": 0.0072,
+        "RM012": 0.0036
+      }
+    },
+    {
+      "id": "PRD05",
+      "name": "Roti Kering Toples",
+      "price": 25000,
+      "hpp": 15000,
+      "margin": 10000,
+      "oven": 5,
+      "mixer": 3,
+      "sdm": 3,
+      "dmax": 40,
+      "shelfDays": 21,
+      "beratAdonan": 250,
+      "bom": {
+        "RM001": 0.13,
+        "RM002": 0.05,
+        "RM003": 0.0015,
+        "RM004": 0.0015,
+        "RM005": 0.015,
+        "RM006": 0.02,
+        "RM007": 0.015,
+        "RM008": 0.0015,
+        "RM013": 0.0025,
+        "RM009": 0.005,
+        "RM011": 0.01,
+        "RM012": 0.005
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "RM001",
+      "name": "Tepung Terigu",
+      "unit": "kg",
+      "category": "utama",
+      "stock": 50,
+      "price": 12000,
+      "minStock": 10,
+      "shelfDays": 180
+    },
+    {
+      "id": "RM002",
+      "name": "Air",
+      "unit": "liter",
+      "category": "utama",
+      "stock": 100,
+      "price": 500,
+      "minStock": 20,
+      "shelfDays": 365
+    },
+    {
+      "id": "RM003",
+      "name": "Ragi (Yeast)",
+      "unit": "kg",
+      "category": "utama",
+      "stock": 5,
+      "price": 120000,
+      "minStock": 1,
+      "shelfDays": 90
+    },
+    {
+      "id": "RM004",
+      "name": "Garam",
+      "unit": "kg",
+      "category": "utama",
+      "stock": 10,
+      "price": 15000,
+      "minStock": 2,
+      "shelfDays": 365
+    },
+    {
+      "id": "RM005",
+      "name": "Margarin",
+      "unit": "kg",
+      "category": "penunjang",
+      "stock": 10,
+      "price": 35000,
+      "minStock": 3,
+      "shelfDays": 60
+    },
+    {
+      "id": "RM006",
+      "name": "Gula Pasir",
+      "unit": "kg",
+      "category": "penunjang",
+      "stock": 15,
+      "price": 16000,
+      "minStock": 5,
+      "shelfDays": 365
+    },
+    {
+      "id": "RM007",
+      "name": "Telur Ayam",
+      "unit": "kg",
+      "category": "penunjang",
+      "stock": 20,
+      "price": 26000,
+      "minStock": 5,
+      "shelfDays": 14
+    },
+    {
+      "id": "RM008",
+      "name": "Bread Improver",
+      "unit": "kg",
+      "category": "penunjang",
+      "stock": 5,
+      "price": 80000,
+      "minStock": 1,
+      "shelfDays": 180
+    },
+    {
+      "id": "RM009",
+      "name": "Coklat",
+      "unit": "kg",
+      "category": "isian",
+      "stock": 10,
+      "price": 85000,
+      "minStock": 2,
+      "shelfDays": 180
+    },
+    {
+      "id": "RM010",
+      "name": "Mesis",
+      "unit": "kg",
+      "category": "isian",
+      "stock": 10,
+      "price": 90000,
+      "minStock": 2,
+      "shelfDays": 180
+    },
+    {
+      "id": "RM011",
+      "name": "Kacang",
+      "unit": "kg",
+      "category": "isian",
+      "stock": 10,
+      "price": 60000,
+      "minStock": 2,
+      "shelfDays": 180
+    },
+    {
+      "id": "RM012",
+      "name": "Susu",
+      "unit": "liter",
+      "category": "isian",
+      "stock": 20,
+      "price": 18000,
+      "minStock": 5,
+      "shelfDays": 7
+    },
+    {
+      "id": "RM013",
+      "name": "Bahan Lain-lain",
+      "unit": "kg",
+      "category": "lain",
+      "stock": 20,
+      "price": 30000,
+      "minStock": 5,
+      "shelfDays": 180
+    }
+  ],
+  "productionProcess": [
+    {
+      "id": "P1",
+      "name": "Penimbangan",
+      "durationMin": 10,
+      "order": 1,
+      "desc": "Timbang bahan baku sesuai resep"
+    },
+    {
+      "id": "P2",
+      "name": "Pencampuran",
+      "durationMin": 30,
+      "order": 2,
+      "desc": "Campur semua bahan hingga adonan kalis"
+    },
+    {
+      "id": "P3",
+      "name": "Tempering (Istirahat)",
+      "durationMin": 15,
+      "order": 3,
+      "desc": "Istirahatkan adonan sebelum dicetak"
+    },
+    {
+      "id": "P4",
+      "name": "Molding (Pembentukan)",
+      "durationMin": 20,
+      "order": 4,
+      "desc": "Bentuk adonan per resep 5 kg, isian sesuai variasi"
+    },
+    {
+      "id": "P5",
+      "name": "Proving (Fermentasi)",
+      "durationMin": 60,
+      "order": 5,
+      "desc": "Biarkan adonan mengembang sebelum dipanggang"
+    },
+    {
+      "id": "P6",
+      "name": "Pengovenan",
+      "durationMin": 20,
+      "order": 6,
+      "desc": "Panggang roti dalam oven hingga matang"
+    },
+    {
+      "id": "P7",
+      "name": "Pendinginan",
+      "durationMin": 15,
+      "order": 7,
+      "desc": "Dinginkan roti sebelum dikemas"
+    },
+    {
+      "id": "P8",
+      "name": "Packing",
+      "durationMin": 10,
+      "order": 8,
+      "desc": "Kemas roti dalam toples atau kemasan plastik"
+    }
+  ],
+  "capacityRules": {
+    "routineKgMin": 10,
+    "routineKgMax": 15,
+    "routineDays": [
+      "Senin",
+      "Kamis"
+    ],
+    "fullKg": 25
+  },
+  "paymentMethods": [
+    "QRIS",
+    "Transfer",
+    "Tunai"
+  ],
+  "recordingMethods": [
+    "Google Sheet",
+    "Manual",
+    "Aplikasi Play Store"
+  ],
+  "costCategories": [
+    "Pengemasan",
+    "Gaji Karyawan",
+    "Bahan Bakar (Gas/Solar)"
+  ],
+  "materialMixRatio": {
+    "utama": 60,
+    "penunjang": 20,
+    "isian": 10,
+    "lain": 10
+  },
+  "stockLogs": [
+    {
+      "id": "LOG-001",
+      "date": "2026-10-14",
+      "materialId": "RM001",
+      "type": "Masuk",
+      "qty": 25,
+      "note": "Pembelian supplier — restock mingguan"
+    },
+    {
+      "id": "LOG-002",
+      "date": "2026-10-15",
+      "materialId": "RM002",
+      "type": "Keluar",
+      "qty": 2.5,
+      "note": "Pemakaian produksi harian"
+    },
+    {
+      "id": "LOG-003",
+      "date": "2026-10-16",
+      "materialId": "RM003",
+      "type": "Masuk",
+      "qty": 5,
+      "note": "Pembelian ragi curah"
+    },
+    {
+      "id": "LOG-004",
+      "date": "2026-10-17",
+      "materialId": "RM001",
+      "type": "Keluar",
+      "qty": 8.4,
+      "note": "Pemakaian produksi 3 varian"
+    }
+  ],
+  "defaults": {
+    "modal": 750000,
+    "ovenJam": 8,
+    "mixerJam": 4,
+    "sdmJam": 16,
+    "orderMin": 150,
+    "modalBulanan": 12000000,
+    "biayaSetup": 100000,
+    "useDemand": false,
+    "kapasitasMode": "rutin",
+    "kgBatch": 12
+  },
+  "labaKemarin": 452000,
+  "daily": [
+    {
+      "label": "Sen",
+      "title": "Senin, 12 Okt 2026",
+      "laba": 285000,
+      "pendapatan": 712000
+    },
+    {
+      "label": "Sel",
+      "title": "Selasa, 13 Okt 2026",
+      "laba": 312000,
+      "pendapatan": 795000
+    },
+    {
+      "label": "Rab",
+      "title": "Rabu, 14 Okt 2026",
+      "laba": 268000,
+      "pendapatan": 672000
+    },
+    {
+      "label": "Kam",
+      "title": "Kamis, 15 Okt 2026",
+      "laba": 344000,
+      "pendapatan": 878000
+    },
+    {
+      "label": "Jum",
+      "title": "Jumat, 16 Okt 2026",
+      "laba": 378000,
+      "pendapatan": 958000
+    },
+    {
+      "label": "Sab",
+      "title": "Sabtu, 17 Okt 2026",
+      "laba": 452000,
+      "pendapatan": 1141000
+    }
+  ],
+  "weekly": [
+    {
+      "label": "P1",
+      "title": "Minggu ke-1 • Okt 2026",
+      "laba": 1980000,
+      "pendapatan": 5120000
+    },
+    {
+      "label": "P2",
+      "title": "Minggu ke-2 • Okt 2026",
+      "laba": 2240000,
+      "pendapatan": 5780000
+    },
+    {
+      "label": "P3",
+      "title": "Minggu ke-3 • Okt 2026",
+      "laba": 2050000,
+      "pendapatan": 5310000
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-001",
+      "act": "Roti Manis",
+      "emoji": "🍞",
+      "tint": "#FDE8E8",
+      "sub": "Pesanan Khusus",
+      "deadline": "Besok, 09:00 WIB",
+      "qty": 150,
+      "status": "Diproses",
+      "st": "process",
+      "paymentMethod": "QRIS",
+      "recordingMethod": "Google Sheet"
+    },
+    {
+      "id": "ORD-002",
+      "act": "Roti Tawar",
+      "emoji": "🥖",
+      "tint": "#EAF1FE",
+      "sub": "Produksi Rutin",
+      "deadline": "Hari ini, 07:30 WIB",
+      "qty": 40,
+      "status": "Selesai",
+      "st": "done",
+      "paymentMethod": "Tunai",
+      "recordingMethod": "Manual"
+    },
+    {
+      "id": "ORD-003",
+      "act": "Roti Kering 100g",
+      "emoji": "🥨",
+      "tint": "#FEF3E2",
+      "sub": "Produksi Rutin",
+      "deadline": "18 Okt, 13:00 WIB",
+      "qty": 25,
+      "status": "Menunggu",
+      "st": "wait",
+      "paymentMethod": "Transfer",
+      "recordingMethod": "Aplikasi Play Store"
+    },
+    {
+      "id": "ORD-004",
+      "act": "Roti Manis",
+      "emoji": "🍞",
+      "tint": "#FDE8E8",
+      "sub": "Produksi Rutin",
+      "deadline": "17 Okt, 08:00 WIB",
+      "qty": 60,
+      "status": "Selesai",
+      "st": "done",
+      "paymentMethod": "Tunai",
+      "recordingMethod": "Manual"
+    },
+    {
+      "id": "ORD-005",
+      "act": "Roti Kering Toples",
+      "emoji": "🧺",
+      "tint": "#E7F6EE",
+      "sub": "Pesanan Khusus",
+      "deadline": "16 Okt, 10:00 WIB",
+      "qty": 120,
+      "status": "Selesai",
+      "st": "done",
+      "paymentMethod": "QRIS",
+      "recordingMethod": "Google Sheet"
+    }
+  ],
+  "posConfig": {
+    "transferInfo": "Bank & nomor rekening TEFA — isi di Pengaturan sebelum dipakai",
+    "overheadNote": "Overhead: listrik, gas, gaji, pengemasan"
+  }
+}
